@@ -1,0 +1,165 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Medieval Guest List for the William Estate</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #2e2a22;
+            color: #f0e6d6;
+            padding: 20px;
+            background-image: url('parchment-background.jpg');
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #d4af37;
+            font-size: 2.2em;
+            margin-bottom: 20px;
+        }
+        .guest-list {
+            max-width: 700px;
+            margin: 0 auto;
+        }
+        .guest {
+            background-color: rgba(65, 42, 20, 0.85);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 10px 0;
+            border: 2px solid #d4af37;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .guest h2 {
+            margin: 0;
+            color: #d4af37;
+            font-size: 1.5em;
+        }
+        .guest p {
+            margin: 5px 0;
+            color: #f0e6d6;
+        }
+        .label {
+            font-weight: bold;
+            color: #d4af37;
+        }
+        .checkbox {
+            display: flex;
+            align-items: center;
+            margin-top: 10px;
+        }
+        .checkbox input {
+            margin-right: 10px;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Enchanted Guest List for the Mind Flayer Cure</h1>
+
+    <div class="guest-list">
+
+        <div class="guest">
+            <h2>Sir Eryndor the Elf Knight</h2>
+            <p><span class="label">Appearance:</span> Tall, slender with pointed ears and a regal demeanor. His silver armor gleams with emerald accents, and he carries a sword forged in elven forges.</p>
+            <p><span class="label">Personality:</span> Noble and disciplined, Sir Eryndor is a fierce protector of the weak. His calm demeanor hides a fiery resolve when his friends are in danger. He believes in honor above all.</p>
+            <p><span class="label">Item:</span> Powder</p>
+            <p><span class="label">Role in Potion:</span> A mystical powder from enchanted stones, used to enhance clarity of mind in the potion, allowing for focus and mental sharpness.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="powder" name="powder">
+                <label for="powder">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <div class="guest">
+            <h2>Lady Thalia the Sorceress</h2>
+            <p><span class="label">Appearance:</span> Mysterious and enchanting, with long black hair and violet eyes. She wears a flowing dark purple robe adorned with arcane symbols, and carries a staff of obsidian.</p>
+            <p><span class="label">Personality:</span> Wise, enigmatic, and calm, Lady Thalia is deeply connected to the mystical forces. She often speaks in riddles and has a deep sense of responsibility toward the balance of the world.</p>
+            <p><span class="label">Item:</span> Water</p>
+            <p><span class="label">Role in Potion:</span> Purified water from an ancient well, representing purity and used to cleanse the mind and soul, washing away the confusion caused by the virus.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="water" name="water">
+                <label for="water">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <div class="guest">
+            <h2>Gorath the Flamebringer</h2>
+            <p><span class="label">Appearance:</span> A towering figure, with fiery red skin and glowing yellow eyes. His armor is adorned with flame motifs, and his hair seems to flicker like fire itself.</p>
+            <p><span class="label">Personality:</span> Hot-headed and passionate, Gorath is a warrior at heart who believes in the power of fire to both destroy and purify. Despite his fierce nature, he has a protective side for those in need.</p>
+            <p><span class="label">Item:</span> Fire</p>
+            <p><span class="label">Role in Potion:</span> Magical flames used to ignite the potion’s power, symbolizing strength and the burning away of negative thoughts and mental viruses.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="fire" name="fire">
+                <label for="fire">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <div class="guest">
+            <h2>Finnian the Half-Faun Bard</h2>
+            <p><span class="label">Appearance:</span> Short and agile with small horns on his head, hooves for feet, and a bright smile. His clothes are made of leaves and soft furs, and he carries a flute made of wood.</p>
+            <p><span class="label">Personality:</span> Charismatic and playful, Finnian is full of energy and optimism. His music brings joy to all, and he has a knack for turning any situation into an opportunity for laughter.</p>
+            <p><span class="label">Item:</span> Seed</p>
+            <p><span class="label">Role in Potion:</span> A seed of resilience, known for its regenerative properties. It represents growth and healing, vital for restoring mental stability and fighting the virus.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="seed" name="seed">
+                <label for="seed">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <div class="guest">
+            <h2>Lira the Forest Nymph</h2>
+            <p><span class="label">Appearance:</span> Ethereal with green-tinted skin, her long hair weaves through vines and flowers. She wears a dress made of leaves and is often barefoot, with delicate wings that shimmer like sunlight.</p>
+            <p><span class="label">Personality:</span> Gentle and nurturing, Lira has a deep connection to the natural world. She is incredibly empathetic and often listens before she speaks, preferring peace and harmony.</p>
+            <p><span class="label">Item:</span> Wood</p>
+            <p><span class="label">Role in Potion:</span> Sacred wood from the oldest tree in the forest, used to stabilize the potion. It grounds and strengthens the mind, providing clarity and resilience.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="wood" name="wood">
+                <label for="wood">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <!-- This guest has a hidden trap, no visual indication of it -->
+        <div class="guest">
+            <h2>Windcaller Naria</h2>
+            <p><span class="label">Appearance:</span> Slender and graceful with flowing silver hair that moves as if in a perpetual breeze. Her robes appear to flutter as if caught in an eternal wind.</p>
+            <p><span class="label">Personality:</span> Calm and serene, Naria has the wisdom of ages. She speaks softly but carries great influence, often using her powers to calm storms—both literal and metaphorical.</p>
+            <p><span class="label">Item:</span> Fan</p>
+            <p><span class="label">Role in Potion:</span> Naria’s fan may seem to add refreshing clarity, but its winds are enchanted to confuse and scatter the ingredients. It inadvertently causes disarray in the potion’s balance.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="fan" name="fan">
+                <label for="fan">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <!-- Another trap guest, hidden -->
+        <div class="guest">
+            <h2>Thalion the Ice Wielder</h2>
+            <p><span class="label">Appearance:</span> Tall and composed, with pale skin and icy blue eyes. His robes glimmer with frost, and ice crystals form around his hands when he casts spells.</p>
+            <p><span class="label">Personality:</span> Reserved and calculating, Thalion’s calm demeanor reflects his deep control over the cold. He believes in using precision and patience in all things.</p>
+            <p><span class="label">Item:</span> Ice</p>
+            <p><span class="label">Role in Potion:</span> Crystals of enchanted ice, symbolizing calmness and serenity, used to cool the mind and reduce the feverish effects of the virus.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="ice" name="ice">
+                <label for="ice">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+        <!-- Another trap guest, hidden -->
+        <div class="guest">
+            <h2>Selene the Winter Witch</h2>
+            <p><span class="label">Appearance:</span> Beautiful, with silver hair and skin like alabaster. Her robes are adorned with snowflakes that glisten like diamonds in the moonlight.</p>
+            <p><span class="label">Personality:</span> Mysterious and introspective, Selene is deeply attuned to the cycles of nature and the seasons. She often speaks in a soft, haunting tone that evokes the quiet of winter.</p>
+            <p><span class="label">Item:</span> Snow</p>
+            <p><span class="label">Role in Potion:</span> Snow from the ancient ice fields, meant to provide clarity. However, it has a tendency to freeze the potion, halting any further chemical reactions.</p>
+            <div class="checkbox">
+                <input type="checkbox" id="snow" name="snow">
+                <label for="snow">Include this ingredient in the potion</label>
+            </div>
+        </div>
+
+    </div>
+
+</body>
+</html>
