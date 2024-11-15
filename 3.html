@@ -1,0 +1,178 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Mind Flayer Potion Recipes</title>
+    <style>
+        body {
+            font-family: 'Garamond', serif;
+            background-color: #2e2a22;
+            color: #f0e6d6;
+            padding: 30px;
+            background-image: url('parchment-background.jpg');
+            background-size: cover;
+        }
+        h1 {
+            text-align: center;
+            color: #d4af37;
+            font-size: 2.5em;
+            margin-bottom: 40px;
+        }
+        .recipe-container {
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+        }
+        .recipe {
+            background-color: rgba(65, 42, 20, 0.85);
+            border-radius: 8px;
+            padding: 20px;
+            margin: 15px 0;
+            width: 70%;
+            box-shadow: 0 4px 10px rgba(0, 0, 0, 0.4);
+        }
+        .recipe h2 {
+            color: #d4af37;
+            font-size: 1.8em;
+        }
+        .recipe p {
+            color: #f0e6d6;
+            font-size: 1.1em;
+        }
+        .label {
+            font-weight: bold;
+            color: #d4af37;
+        }
+        .ingredients-list {
+            margin: 10px 0;
+        }
+        .ingredients-list li {
+            color: #f0e6d6;
+            margin: 5px 0;
+        }
+        .recipe-answer {
+            color: #f0e6d6;
+            font-style: italic;
+            margin-top: 15px;
+        }
+        .answer-section {
+            background-color: #f0e6d6;
+            color: #2e2a22;
+            padding: 10px;
+            border-radius: 8px;
+            margin-top: 20px;
+        }
+        .answer-button {
+            background-color: #d4af37;
+            border: none;
+            color: #2e2a22;
+            padding: 10px 20px;
+            font-size: 1.1em;
+            cursor: pointer;
+            border-radius: 5px;
+        }
+        .answer-button:hover {
+            background-color: #b38b2f;
+        }
+    </style>
+</head>
+<body>
+
+    <h1>The Mind Flayer Potion Recipes</h1>
+    <div class="recipe-container">
+        
+        <!-- Recipe 1 -->
+        <div class="recipe">
+            <h2>Recipe 1: Mysterious Concoction</h2>
+            <p class="label">Purpose:</p>
+            <p>This potion is rumored to cure mental afflictions and feverish states. It has been used in various ancient healing rituals, but its true composition remains a mystery.</p>
+            <p class="label">Ingredients:</p>
+            <ul class="ingredients-list">
+                <li>Crystalline powder from a lost kingdom</li>
+                <li>A pure, sacred liquid from the heart of the forest</li>
+                <li>A burning flame captured in a vial</li>
+            </ul>
+            <p class="recipe-answer">Guess the correct combination and see if you can brew it successfully.</p>
+        </div>
+
+        <!-- Recipe 2 -->
+        <div class="recipe">
+            <h2>Recipe 2: Elemental Elixir</h2>
+            <p class="label">Purpose:</p>
+            <p>Created to restore clarity to the mind, this elixir is said to come from the combination of elemental forces. Only the bravest dare to brew it, as it requires careful control.</p>
+            <p class="label">Ingredients:</p>
+            <ul class="ingredients-list">
+                <li>Blazing heat from a dragon’s breath</li>
+                <li>The essence of the moon captured in a seed</li>
+                <li>The cool touch of winter's ice</li>
+            </ul>
+            <p class="recipe-answer">Can you figure out what ingredients go together in this potion?</p>
+        </div>
+
+        <!-- Recipe 3 -->
+        <div class="recipe">
+            <h2>Recipe 3: Frozen Remedy</h2>
+            <p class="label">Purpose:</p>
+            <p>A potent remedy for those afflicted by the virus of the mind flayers. This recipe harnesses the power of the frozen realms to calm fevered thoughts.</p>
+            <p class="label">Ingredients:</p>
+            <ul class="ingredients-list">
+                <li>Frozen crystals from a mountaintop</li>
+                <li>A volatile liquid from deep within the sea</li>
+                <li>The ancient seed of a long-lost tree</li>
+            </ul>
+            <p class="recipe-answer">Try to guess which ingredients are meant to be combined to complete this remedy.</p>
+        </div>
+
+        <!-- Recipe 4 -->
+        <div class="recipe">
+            <h2>Recipe 4: The Alchemist’s Draft</h2>
+            <p class="label">Purpose:</p>
+            <p>A rare and dangerous concoction used by ancient alchemists to restore lost memories and mental clarity. Its brewing process remains highly secretive.</p>
+            <p class="label">Ingredients:</p>
+            <ul class="ingredients-list">
+                <li>A spark from the heart of an ancient volcano</li>
+                <li>The essence of life, captured in a seed</li>
+                <li>Liquid light extracted from the stars</li>
+            </ul>
+            <p class="recipe-answer">The ingredients must be carefully combined. Can you determine the recipe's true combination?</p>
+        </div>
+
+        <!-- Recipe 5 -->
+        <div class="recipe">
+            <h2>Recipe 5: The Cleansing Brew</h2>
+            <p class="label">Purpose:</p>
+            <p>Used to rid the mind of foreign influence, this brew is said to offer complete purification. However, it requires delicate timing and the perfect mixture of elements.</p>
+            <p class="label">Ingredients:</p>
+            <ul class="ingredients-list">
+                <li>Essence of fire captured in the heart of a comet</li>
+                <li>Salt extracted from the deepest oceans</li>
+                <li>The breath of a thousand winds</li>
+            </ul>
+            <p class="recipe-answer">Can you figure out what the final combination of ingredients should be?</p>
+        </div>
+
+        <!-- Answer Section -->
+        <div class="answer-section">
+            <p class="label">Test Your Knowledge</p>
+            <button class="answer-button" onclick="revealAnswers()">Reveal Answers</button>
+        </div>
+
+        <div id="answers" style="display: none;">
+            <p class="recipe-answer"><strong>Recipe 1 Answer:</strong> Powder (Crystalline Powder), Water (Sacred Liquid), Fire (Burning Flame)</p>
+            <p class="recipe-answer"><strong>Recipe 2 Answer:</strong> Fire (Dragon's Breath), Seed (Moon Essence), Ice (Winter's Touch)</p>
+            <p class="recipe-answer"><strong>Recipe 3 Answer:</strong> Ice (Frozen Crystals), Water (Volatile Liquid), Seed (Ancient Seed)</p>
+            <p class="recipe-answer"><strong>Recipe 4 Answer:</strong> Fire (Spark from Volcano), Seed (Essence of Life), Water (Liquid Light)</p>
+            <p class="recipe-answer"><strong>Recipe 5 Answer:</strong> Fire (Essence of Fire), Salt (Salt from the Oceans), Air (Breath of Winds)</p>
+        </div>
+
+    </div>
+
+    <script>
+        function revealAnswers() {
+            document.getElementById("answers").style.display = "block";
+        }
+    </script>
+
+</body>
+</html>
